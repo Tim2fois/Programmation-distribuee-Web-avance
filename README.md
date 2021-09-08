@@ -4,4 +4,4 @@ Autors : Timothée REBEL - Arthur GACHOD
 
 
 1. https://spring.io/quickstart
-2. he
+2. https://spring.io/guides/gs/rest-service
