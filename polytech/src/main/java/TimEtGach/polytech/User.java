@@ -2,7 +2,7 @@ package TimEtGach.polytech;
 
 import org.jetbrains.annotations.NotNull;
 
-public class User {
+public class    User {
 
     private long id;
 
