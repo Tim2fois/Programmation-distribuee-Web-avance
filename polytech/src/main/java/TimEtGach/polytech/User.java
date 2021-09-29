@@ -15,6 +15,9 @@ public class    User {
         this.name = name;
     }
 
+    public getList(){
+        return
+    }
     public long getId(){
         return id;
     }
