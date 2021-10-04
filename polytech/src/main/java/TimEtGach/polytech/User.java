@@ -4,55 +4,40 @@ import org.jetbrains.annotations.NotNull;
 
 public class    User {
 
-    @NotNull(message = "Id required")
-    private long id;
+    private long userId;
+    private String firstname;
+    private String lastname;
+    private int age;
 
-    @NotNull(message = "Password required")
-    private String password;
-
-    @NotNull
-    private String name;
-    private String email;
+    @NotNull(message = "")
 
 
-    public User(long id, String name){
-        this.id = id;
-        this.name = name;
+    public User(long id, String firstname, String lastname, int age){
+        this.userId = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
     }
 
-    public getList(){
-        return
-    }
-    public long getId(){
-        return id;
-    }
+    /* initialisation ID */
+    public long getId(){ return userId; }
 
-    public String getEmail(){
-        return email;
-    }
+    /* initialisation first_name */
+    public String getFirstname(){ return firstname; }
+    public void setFirstname(String firstname){ this.firstname = firstname; }
 
-    public  String getName(){
-        return name;
-    }
+    /* initialisation last_name */
+    public String getLastname(){ return lastname; }
+    public void setLastname(String lastname){ this.lastname = lastname; }
 
-    public void setName(String name){
-        this.name = name;
-    }
+    /* initialisation Age */
+    public int getAge() { return age; }
 
-    public void setEmail(String email){
-        this.email = email;
-    }
+    public void setAge(int age) { this.age = age; }
 
     public void setId(long id){
-        this.id = id;
+        this.userId = id;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
 }
