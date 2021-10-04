@@ -4,11 +4,16 @@ import org.jetbrains.annotations.NotNull;
 
 public class    User {
 
+    @NotNull(message = "Id required")
     private long id;
+
+    @NotNull(message = "Password required")
+    private String password;
 
     @NotNull
     private String name;
     private String email;
+
 
     public User(long id, String name){
         this.id = id;
@@ -41,4 +46,13 @@ public class    User {
     public void setId(long id){
         this.id = id;
     }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 }
